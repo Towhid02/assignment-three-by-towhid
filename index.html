@@ -17,6 +17,7 @@
           extend: {
             colors: {
               clifford: '#da373d',
+
             }
           }
         }
@@ -30,49 +31,55 @@
 <body>
     <header>
         <!-- navbar -->
-        <!-- <section class="max-w-screen-2xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
-            <nav>
-              <div class="navbar bg-base-100 bg-[#F85559]">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 flex">
-                      <li><a>Home</a></li>
-                      <li><a>About Us</a></li>
-                      <li><a>Shop</a></li>
-                      <li><a>All Fruits</a></li>
-                    </ul>
-                    <div class=" hidden lg:flex ">
-                      <ul class=" px-2 flex gap-10">
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>All Fruits</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="navbar-center text-center">
-                  <a class="btn btn-ghost normal-case text-2xl text-white"> <img class="w-9" src="images/logo.png" alt="">Fruit Burst</a>
-                </div>
-                <div class="navbar-end">
-                  <a class="btn bg-white rounded-full"><input type="text" placeholder="Search" class=" border-none w-20 md:w-auto rounded-full " /><i class="fa-solid fa-magnifying-glass"></i></a>
-                </div>
+        <section class="max-w-screen-2xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+          <div class="navbar md:bg-[#F85559] rounded-full">
+            <div class="navbar-start order-last md:order-first">
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] shadow text-white bg-[#F85559] rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
               </div>
+              <div class="hidden md:flex">
+                <ul class="menu menu-horizontal px-1 text-white ">
+                  <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                   
+                </ul>
               </div>
-            </nav>
-        </section> -->
+              </div >
+              <div class="navbar-center ">
+              <a class="btn btn-ghost normal-case text-black md:text-white text-3xl font-bold"><img class="w-10" src="images/logo.png" alt="">Fruit Burst</a>
+            </div>
+            
+            
+            <div class="navbar-end invisible md:visible md:relative">
+            <div class="max-w-xs w-full relative">
+              <input type="text" placeholder="search...." class="input input-bordered w-full max-w-xs rounded-full invisible lg:visible" />
+              <i class="fa-solid fa-magnifying-glass absolute right-4 top-4"></i>
+            </div>
+            </div>
+          </div>
+          
+        </section>
+    </header>
         <main>
         <!-- hero -->
-        <section class="max-w-screen-2xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+        <section class="max-w-screen-2xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10 relative" >
           <div>
           <!-- slide1 -->
           <div class="carousel max-w-full ">
-            <div id="slide1" class="carousel-item relative w-full bg-cover bg-center bg-blend-overlay bg-black/50 " style="background-image: url('images/banner1.png');">
+            <div id="slide1" class="carousel-item relative w-full bg-blend-overlay bg-black/50 bg-[url('images/banner1.png')] " >
               <div class="text-white mx-auto py-40  text-center">
-              <h1 class="mb-5 text-5xl lg:text-7xl font-bold text-center">Exotic tastes at your doorstep</h1>
-              <p class="mb-5 text-2xl font-semibold">We supply highly quality organic products</p>
+              <h1 class="mb-5 text-3xl md:5xl lg:text-7xl font-bold text-center">Exotic tastes at your doorstep</h1>
+              <p class="mb-5 px-16 md:px-2 text-xl md:text-2xl font-semibold">We supply highly quality organic products</p>
               <button class="btn bg-[#F85559] border-none text-xl text-white lg: hover:text-black">Shop Now</button>
             </div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -83,8 +90,8 @@
             <!-- slide2 -->
             <div id="slide2" class="carousel-item relative w-full bg-cover bg-center bg-blend-overlay bg-black/50 " style="background-image: url('images/banner2.png');">
               <div class="text-white mx-auto py-40  text-center">
-              <h1 class="mb-5  text-5xl lg:text-7xl font-bold text-center">Exotic tastes at your doorstep</h1>
-              <p class="mb-5 text-2xl font-semibold">We supply highly quality organic products</p>
+              <h1 class="mb-5  text-3xl md:5xl lg:text-7xl font-bold text-center">Exotic tastes at your doorstep</h1>
+              <p class="mb-5 px-16 md:px-2 text-xl md:text-2xl font-semibold">We supply highly quality organic products</p>
               <button class="btn bg-[#F85559] border-none text-xl text-white lg: hover:text-black">Shop Now</button>
             </div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -93,10 +100,10 @@
               </div>
             </div> 
             <!-- slide3 -->
-            <div id="slide3" class="carousel-item relative w-full bg-cover bg-center bg-blend-overlay bg-black/50 " style="background-image: url('images/banner3.png');">
+            <div id="slide3" class="carousel-item relative w-full  bg-cover bg-center bg-cert bg-blend-overlay bg-black/50 " style="background-image: url('images/banner3.png');">
               <div class="text-white mx-auto py-40  text-center">
-              <h1 class="mb-5 text-5xl lg:text-7xl font-bold text-center">Exotic tastes at your doorstep</h1>
-              <p class="mb-5 text-2xl font-semibold">We supply highly quality organic products</p>
+              <h1 class="mb-5 text-3xl md:5xl lg:text-7xl font-bold text-center">Exotic tastes at your doorstep</h1>
+              <p class="mb-5 px-16 md:px-2 text-xl md:text-2xl font-semibold">We supply highly quality organic products</p>
               <button class="btn bg-[#F85559] border-none text-xl text-white lg: hover:text-black">Shop Now</button>
             </div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -107,8 +114,8 @@
             <!-- slide4 -->
             <div id="slide4" class="carousel-item relative w-full bg-cover bg-center bg-blend-overlay bg-black/50 " style="background-image: url('images/banner4.png');">
               <div class="text-white mx-auto py-40  text-center">
-              <h1 class="mb-5 text-5xl lg:text-7xl font-bold text-center">Exotic tastes at your doorstep</h1>
-              <p class="mb-5 text-2xl font-semibold">We supply highly quality organic products</p>
+              <h1 class="mb-5 text-3xl md:5xl lg:text-7xl font-bold text-center">Exotic tastes at your doorstep</h1>
+              <p class="mb-5 px-16 md:px-2 text-xl md:text-2xl font-semibold">We supply highly quality organic products</p>
               <button class="btn bg-[#F85559] border-none text-xl text-white lg: hover:text-black">Shop Now</button>
             </div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -119,39 +126,68 @@
           </div>
           </div>
             
-
+          <div class="hidden lg:inline max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10 relative lg:absolute lg:-bottom-28 lg:left-64">
+          <div class="flex flex-wrap  items-center justify-center text-center shadow-2xl px-10 py-5 gap-20 bg-white">
+          
+            <div>
+              <img class="w-20" src="images/fruit1.png" alt="">
+              <p>Grapes</p>
+            </div>
+  
+            <div>
+              <img class="w-20" src="images/fruit7.png" alt="">
+              <p>orange</p>
+            </div>
+  
+            <div>
+              <img class="w-20" src="images/fruit3.png" alt="">
+              <p>Mangos</p>
+            </div>
+  
+            <div>
+              <img class="w-20" src="images/fruit4.png" alt="">
+              <p>Strawberry</p>
+            </div>
+  
+            <div>
+              <img class="w-20" src="images/fruit5.png" alt="">
+              <p>Pomegranate</p>
+            </div>
+  
+          </div>
+        </div>
       </section>
     </header>
     <!-- deal -->
     <section class="max-w-screen-2xl mx-auto px-8 md:px-16 lg:px-24 py-10 my-10">
       <!-- part1 -->
       <div class="flex flex-col lg:flex-row justify-between text-center items-center gap-40 lg:gap-80  mx-auto w-full ">
-      <div class=" text-left" >
-        <h1 class="text-5xl font-bold mb-5">Deal of the day</h1>
+      <div class=" text-center md:text-left p-5" >
+        <h1 class="text-3xl md:text-5xl font-bold mb-5">Deal of the day</h1>
         <p class=" text-xl mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
       </div>
       <div class=" text-right">
         <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
           <div class="flex flex-col">
-            <span class="countdown font-mono text-5xl">
+            <span class="countdown font-mono text-3xl md:text-5xl">
               <span style="--value:15;"></span>:
             </span>
             days
           </div> 
           <div class="flex flex-col right-0">
-            <span class="countdown font-mono text-5xl">
+            <span class="countdown font-mono text-3xl md:text-5xl">
               <span style="--value:10;"></span>:
             </span>
             hours
           </div> 
           <div class="flex flex-col">
-            <span class="countdown font-mono text-5xl">
+            <span class="countdown font-mono text-3xl md:text-5xl">
               <span style="--value:24;"></span>:
             </span>
             min
           </div> 
           <div class="flex flex-col">
-            <span class="countdown font-mono text-5xl">
+            <span class="countdown font-mono text-3xl md:text-5xl">
               <span style="--value:35;"></span>
             </span>
             sec
@@ -351,7 +387,7 @@
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
           <div class="max-w-full px-5">
-            <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+            <h1 class="mb-5 text-3xl md:text-5xl font-bold">Meet the team section</h1>
             <p class="mb-5 w-3/5 m-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20">
@@ -473,8 +509,8 @@
     </section>
   </main>
   <footer class="footer footer-center p-10  bg-[#121212] text-base-content rounded text-white">
-    <div class="flex">
-      <img src="images/logo.png" alt="">
+    <div class="flex flex-col md:flex-row">
+      <img  src="images/logo.png" alt="">
       <h1 class="text-5xl font-bold">Fruits Brust</h1>
     </div>
     <div class="flex flex-wrap justify-center text-center items-center gap-5  md:gap-10">
